@@ -29,16 +29,17 @@ function calculateSubtotal() {
 }
 
 
-/* */
+
 // Sélectionnez tous les boutons de suppression
-const deleteButtons = document.querySelectorAll('.delete-item');
+const removeButtons = document.querySelectorAll('.remove-button');
 
 // Parcourez tous les boutons de suppression et ajoutez un gestionnaire d'événements pour chaque bouton
-deleteButtons.forEach(button => {
+removeButtons.forEach(button => {
     button.addEventListener('click', function() {
-        const parent = this.parentElement; // Obtenez le conteneur parent de l'élément du panier
-        parent.remove(); // Supprimez l'élément du panier
-        calculateSubtotal(); // Recalculez le sous-total après la suppression
+        // Obtenez le conteneur parent de l'élément du panier (div.cart-item dans cet exemple)
+        const cartItem = this.parentElement;
+
+        // Supprimez l'élément du panier en le retirant de son parent
+        cartItem.remove();
     });
 });
-
