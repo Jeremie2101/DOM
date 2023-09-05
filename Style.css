@@ -1,0 +1,48 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.bout{
+    display: flex;
+
+}
+
+.parent {
+    display: flex;
+    background-color: rgb(81, 230, 210);
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.2); /* Correction de la propriété box-shadow */
+}
+
+.parent img {
+    width: 120px;
+}
+
+.quantity {
+    text-align: center;
+    margin-left: 23px;
+}
+
+.price {
+    border: 1px solid #ccc; /* Utilisation de la notation plus courante pour la bordure */
+    padding: 5px; /* Ajout de marge intérieure pour l'élément .price */
+    width: 130px;
+}
+.fa-regular.fa-heart{
+    color: rgb(250, 8, 8);
+}
+input{ 
+    width: 20px; /* Définissez la largeur souhaitée */
+    height: 15px; /* Définissez la hauteur souhaitée */
+    border: solid 1px;  /* Ajoutez d'autres styles si nécessaire, tels que la police de caractères, la couleur du texte, etc. */
+     border-radius: 100px;   
+     text-align: center;
+     background-color: red;
+     color: aliceblue;
+}
